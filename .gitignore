@@ -1,3 +1,5 @@
 .venv
 .env
 Debug/
+bin/Debug/net10.0/diarization.dll
+bin/Debug/net10.0/diarization.exe

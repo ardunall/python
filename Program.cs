@@ -192,14 +192,9 @@ async Task<string> CallPythonAsync(string jsonInput)
         if (process == null)
             return "Python process başlatılamadı!";
 
-        // Read stdout and stderr concurrently to avoid deadlock
-        var outputTask = process.StandardOutput.ReadToEndAsync();
-        var errorTask = process.StandardError.ReadToEndAsync();
-        
+        var output = await process.StandardOutput.ReadToEndAsync();
+        var error = await process.StandardError.ReadToEndAsync();
         await process.WaitForExitAsync();
-        
-        var output = await outputTask;
-        var error = await errorTask;
 
         // Geçici dosyayı sil
         File.Delete(tempJsonPath);
