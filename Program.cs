@@ -8,7 +8,7 @@ using System.Text.Json.Serialization;
 // ==================== CONFIGURATION ====================
 var TogetherApiKey = LoadEnvValue("TogetherApiKey");
 const string ExpectedLanguage = "tr";  // Dil kodu (tr, en, etc.)
-const string AudioFilePath = "audio/audio6.wav";  // Ses dosyası yolu
+const string AudioFilePath = "audio/audio5.wav";  // Ses dosyası yolu
 const string PythonScriptPath = "python/main.py";  // Python script yolu
 // ========================================================
 
@@ -192,9 +192,14 @@ async Task<string> CallPythonAsync(string jsonInput)
         if (process == null)
             return "Python process başlatılamadı!";
 
-        var output = await process.StandardOutput.ReadToEndAsync();
-        var error = await process.StandardError.ReadToEndAsync();
+        // Read stdout and stderr concurrently to avoid deadlock
+        var outputTask = process.StandardOutput.ReadToEndAsync();
+        var errorTask = process.StandardError.ReadToEndAsync();
+        
         await process.WaitForExitAsync();
+        
+        var output = await outputTask;
+        var error = await errorTask;
 
         // Geçici dosyayı sil
         File.Delete(tempJsonPath);
