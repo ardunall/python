@@ -1,0 +1,90 @@
+[
+  {
+    "speaker": "SPEAKER_00",
+    "text": "Alo iyi g\u00FCnler. Alo duyabiliyor musun"
+  },
+  {
+    "speaker": "SPEAKER_01",
+    "text": "beni? Duyabiliyorum."
+  },
+  {
+    "speaker": "SPEAKER_00",
+    "text": "Bankay\u0131 arad\u0131m de\u011Fil mi? Evet ABC"
+  },
+  {
+    "speaker": "SPEAKER_01",
+    "text": "Bankas\u0131\u0027ndan Arda ben. Sana nas\u0131l yard\u0131mc\u0131 olurum?"
+  },
+  {
+    "speaker": "SPEAKER_00",
+    "text": "Tamam Arda Bey sesiniz arkadan hi\u00E7bir \u015Fey gelmeyince anlayamad\u0131m. Yani direkt olarak ke\u015Fke kendisi tan\u0131sayd\u0131n\u0131z. Neyse u\u011Fra\u015Fmayaca\u011F\u0131m sizinle \u015Fu an. Zaten ger\u00E7ekten sinirlendim. \u015Eube de\u011Fi\u015Ftirmek istiyorum. En yak\u0131n \u015Fube nerede? Ne yapmam gerekiyor? S\u00F6yler misiniz l\u00FCtfen?"
+  },
+  {
+    "speaker": "SPEAKER_01",
+    "text": "\u00D6ncelikle sizi anl\u0131yorum. Adres istedi\u011Finiz i\u00E7in kay\u0131tlar\u0131m\u0131zdaki adresiniz olan adres bilgisi do\u011Fru mudur acaba?"
+  },
+  {
+    "speaker": "SPEAKER_00",
+    "text": "Hay\u0131r hay\u0131r iki ay \u00F6nce ta\u015F\u0131nd\u0131m ben. Yeni adresim Tayyadi bir sokak, Korsan \u00E7\u0131kmada sokak, No 11B Koz \u0130stanbul oldu art\u0131k. Onu da de\u011Fi\u015Ftirin zaten. Tabii"
+  },
+  {
+    "speaker": "SPEAKER_01",
+    "text": "ki tabii ki. O halde \u00F6nce adresinizi g\u00FCnceleyeyim. Kimlik kart\u0131n\u0131z\u0131n son kullanma tarihini Yeni adresimize"
+  },
+  {
+    "speaker": "SPEAKER_00",
+    "text": "en yak\u0131n \u015Fube"
+  },
+  {
+    "speaker": "SPEAKER_01",
+    "text": "Beykoz"
+  },
+  {
+    "speaker": "SPEAKER_00",
+    "text": "\u015Eubesi. Tamam."
+  },
+  {
+    "speaker": "SPEAKER_01",
+    "text": "Evrak gerekmiyor. Adres de\u011Fi\u015Fikli\u011Fi sisteme yans\u0131d\u0131ktan sonra \u015Fube de\u011Fi\u015Fikli\u011Finizi yapabiliriz."
+  },
+  {
+    "speaker": "SPEAKER_00",
+    "text": "Tamam. \u015Eubeye gitmeme gerek yok o zaman. Sevindim. Tamam."
+  },
+  {
+    "speaker": "SPEAKER_01",
+    "text": "Yok Ay\u015Fe Han\u0131m. Bilgilerinizi g\u00FCzeldikten sonra \u015Fube de\u011Fi\u015Fikli\u011Finizi \u015Fimdi ger\u00E7ekle\u015Ftirece\u011Fim."
+  },
+  {
+    "speaker": "SPEAKER_00",
+    "text": "Tamam. Benim kimlik kart\u0131m\u0131n son kullanma tarihi 1.1.2030 olmas\u0131 gerekiyordu. Do\u011Fru mu? Bir kontrol etseniz."
+  },
+  {
+    "speaker": "SPEAKER_01",
+    "text": "Evet do\u011Frudur."
+  },
+  {
+    "speaker": "SPEAKER_00",
+    "text": "Tamam. \u015Eimdi siz deyince \u015Furadan da de\u011Fi\u015Fecek de\u011Fil mi?"
+  },
+  {
+    "speaker": "SPEAKER_01",
+    "text": "Aynen \u00F6yle. De\u011Fi\u015Fecek Ay\u015Fe"
+  },
+  {
+    "speaker": "SPEAKER_00",
+    "text": "Han\u0131m. Tamam. \u00C7ok te\u015Fekk\u00FCr ederim. Sa\u011F"
+  },
+  {
+    "speaker": "SPEAKER_01",
+    "text": "olun ABC Bankas\u0131\u0027n\u0131 arad\u0131\u011F\u0131n\u0131z i\u00E7in biz te\u015Fekk\u00FCr ederiz."
+  },
+  {
+    "speaker": "SPEAKER_00",
+    "text": "Kolay gelsin, iyi g\u00FCnler."
+  },
+  {
+    "speaker": "SPEAKER_01",
+    "text": "\u0130yi g\u00FCnler dilerim."
+  }
+]

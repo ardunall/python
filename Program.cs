@@ -177,12 +177,15 @@ async Task<string> CallPythonAsync(string jsonInput)
 
         var psi = new ProcessStartInfo
         {
-            FileName = "python",
-            Arguments = $"\"{PythonScriptPath}\" \"{tempJsonPath}\"",
+            FileName = "uv",
+            Arguments = $"run --project python \"{PythonScriptPath}\" \"{tempJsonPath}\"",
             RedirectStandardOutput = true,
             RedirectStandardError = true,
             UseShellExecute = false,
-            CreateNoWindow = true
+            CreateNoWindow = true,
+            WorkingDirectory = AppContext.BaseDirectory.Contains("bin") 
+                ? Path.GetFullPath(Path.Combine(AppContext.BaseDirectory, "..", "..", ".."))
+                : Environment.CurrentDirectory
         };
 
         using var process = Process.Start(psi);

@@ -18,7 +18,14 @@ def identify_speaker_roles(transcript_data):
         "My name is and I am your assistant",
         "Merhaba, size nasıl yardımcı olabilirim",
         "Müşteri hizmetlerine hoş geldiniz",
-        "Bu görüşme kalite kontrol amacıyla kaydedilmektedir"
+        "Bu görüşme kalite kontrol amacıyla kaydedilmektedir",
+        "Bankasından arıyorum",
+        "Sana nasıl yardımcı olabilirim",
+        "Size nasıl yardımcı olabilirim",
+        "Bizi aradığınız için teşekkür ederiz",
+        "Bilgilerinizi güncelleyeceğim",
+        "Sisteme yansıdıktan sonra",
+        "Kimlik kartınızın son kullanma tarihi",
     ]
     
     customer_anchors = [
@@ -29,7 +36,15 @@ def identify_speaker_roles(transcript_data):
         "Bir sorunum var",
         "Yardım istiyorum",
         "Siparişim gelmedi",
-        "Şikayette bulunmak istiyorum"
+        "Şikayette bulunmak istiyorum",
+        "Bankayı aradım",
+        "Şube değiştirmek istiyorum",
+        "Sinirlendim",
+        "En yakın şube nerede",
+        "Taşındım",
+        "Yeni adresim",
+        "Teşekkür ederim",
+        "Ne yapmam gerekiyor",
     ]
 
     # 3. Encode the anchors into vectors
