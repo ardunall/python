@@ -6,7 +6,7 @@ using System.Text.Json;
 using System.Text.Json.Serialization;
 
 // ==================== CONFIGURATION ====================
-const string TogetherApiKey = "YOUR_TOGETHER_API_KEY_HERE";  // API anahtarınızı buraya girin
+var TogetherApiKey = LoadEnvValue("TogetherApiKey");
 const string ExpectedLanguage = "tr";  // Dil kodu (tr, en, etc.)
 const string AudioFilePath = "audio.wav";  // Ses dosyası yolu
 const string PythonScriptPath = "python/main.py";  // Python script yolu
@@ -205,6 +205,28 @@ async Task<string> CallPythonAsync(string jsonInput)
     {
         return $"Python çağrısı hatası: {ex.Message}";
     }
+}
+
+// ==================== Helper Functions ====================
+
+string LoadEnvValue(string key)
+{
+    var envPath = Path.Combine(AppContext.BaseDirectory, "..", "..", "..", ".env");
+    if (!File.Exists(envPath))
+        envPath = ".env"; // Fallback to current directory
+    
+    if (File.Exists(envPath))
+    {
+        foreach (var line in File.ReadAllLines(envPath))
+        {
+            var parts = line.Split('=', 2);
+            if (parts.Length == 2 && parts[0].Trim() == key)
+                return parts[1].Trim();
+        }
+    }
+    
+    // Fallback to environment variable
+    return Environment.GetEnvironmentVariable(key) ?? string.Empty;
 }
 
 // ==================== DTO Classes ====================

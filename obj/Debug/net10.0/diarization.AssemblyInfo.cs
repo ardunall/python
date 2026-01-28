@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("diarization")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fae72a2d6d42d86327ff2a27fe0ca0c4c3325127")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+310c3b8ea2c797119e503792e7ae01dea77dbfae")]
 [assembly: System.Reflection.AssemblyProductAttribute("diarization")]
 [assembly: System.Reflection.AssemblyTitleAttribute("diarization")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
