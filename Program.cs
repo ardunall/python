@@ -8,7 +8,7 @@ using System.Text.Json.Serialization;
 // ==================== CONFIGURATION ====================
 var TogetherApiKey = LoadEnvValue("TogetherApiKey");
 const string ExpectedLanguage = "tr";  // Dil kodu (tr, en, etc.)
-const string AudioFilePath = "audio/audio3.wav";  // Ses dosyası yolu
+const string AudioFilePath = "audio/audio6.wav";  // Ses dosyası yolu
 const string PythonScriptPath = "python/main.py";  // Python script yolu
 // ========================================================
 
